@@ -1,0 +1,2359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5ZT8JEK5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q5ZT8JEK5D');
+</script>
+
+    <!--
+    ==================================================
+    BASIC PAGE INFORMATION
+    ==================================================
+    -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="HTML Lesson 01 - Learn HTML basics, document structure, headings, paragraphs, links, images, lists, buttons, forms and semantic HTML."
+    >
+
+    <meta
+        name="author"
+        content="Tharusha Code Academy"
+    >
+
+    <title>HTML Lesson 01 | Tharusha Code Academy</title>
+
+
+    <!--
+    ==================================================
+    MAIN STYLESHEET
+    ==================================================
+    -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!--
+    ==================================================
+    HEADER
+    ==================================================
+    -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Tharusha Code Academy Home"
+            >
+                &lt;TCA/&gt;
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="main-nav"
+                aria-label="Main navigation"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="learning.html">
+                    Learning
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!--
+    ==================================================
+    MAIN CONTENT
+    ==================================================
+    -->
+
+    <main>
+
+
+        <!--
+        ==================================================
+        LESSON HERO
+        ==================================================
+        -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+                    HTML / LESSON 01
+                </span>
+
+                <h1>
+                    HTML Basics_
+                </h1>
+
+                <p>
+                    Learn what HTML is, create your first HTML
+                    document and understand the basic building
+                    blocks of a web page.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        LESSON OVERVIEW
+        ==================================================
+        -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        LESSON OVERVIEW
+                    </span>
+
+                    <h2>
+                        What You Will Learn
+                    </h2>
+
+                    <p>
+                        By the end of this lesson, you will
+                        understand the basic structure of an
+                        HTML page and be able to create your
+                        first simple website.
+                    </p>
+
+                </div>
+
+
+                <div class="path-grid">
+
+
+                    <article class="path-card">
+
+                        <span class="path-number">
+                            01
+                        </span>
+
+                        <div class="path-icon">
+                            HTML
+                        </div>
+
+                        <h3>
+                            What Is HTML?
+                        </h3>
+
+                        <p>
+                            Understand the purpose of HTML and
+                            how it is used to structure websites.
+                        </p>
+
+                    </article>
+
+
+                    <article class="path-card">
+
+                        <span class="path-number">
+                            02
+                        </span>
+
+                        <div class="path-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>
+                            Page Structure
+                        </h3>
+
+                        <p>
+                            Learn the basic structure that every
+                            HTML document should start with.
+                        </p>
+
+                    </article>
+
+
+                    <article class="path-card">
+
+                        <span class="path-number">
+                            03
+                        </span>
+
+                        <div class="path-icon">
+                            H1
+                        </div>
+
+                        <h3>
+                            HTML Elements
+                        </h3>
+
+                        <p>
+                            Learn headings, paragraphs, links,
+                            images, lists, buttons and forms.
+                        </p>
+
+                    </article>
+
+
+                    <article class="path-card">
+
+                        <span class="path-number">
+                            04
+                        </span>
+
+                        <div class="path-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>
+                            Mini Project
+                        </h3>
+
+                        <p>
+                            Combine the lesson concepts to
+                            build a simple personal portfolio page.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 01 — WHAT IS HTML
+        ==================================================
+        -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        01 / FUNDAMENTALS
+                    </span>
+
+                    <h2>
+                        What Is HTML?
+                    </h2>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+                    <p>
+                        HTML stands for
+                        <strong>
+                            HyperText Markup Language
+                        </strong>.
+                    </p>
+
+                    <p>
+                        HTML is used to create the structure
+                        and content of web pages. It tells the
+                        browser what different pieces of content
+                        are.
+                    </p>
+
+                    <p>
+                        For example, HTML can tell the browser
+                        that something is a heading, paragraph,
+                        link, image, list or form.
+                    </p>
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                index.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+                                <span class="code-purple">
+                                    &lt;h1&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    My First Website
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/h1&gt;
+                                </span>
+                            </div>
+
+
+                            <div>
+                                <span class="code-purple">
+                                    &lt;p&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    Welcome to my website.
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/p&gt;
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 02 — FIRST HTML DOCUMENT
+        ==================================================
+        -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        02 / FIRST DOCUMENT
+                    </span>
+
+                    <h2>
+                        Create Your First HTML Document
+                    </h2>
+
+                    <p>
+                        Create a file called
+                        <strong>
+                            index.html
+                        </strong>
+                        and add the following basic structure.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                index.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+                                <span class="code-purple">
+                                    &lt;!DOCTYPE html&gt;
+                                </span>
+                            </div>
+
+                            <div>
+                                <span class="code-purple">
+                                    &lt;html
+                                </span>
+
+                                <span class="code-yellow">
+                                    lang
+                                </span>
+
+                                =
+
+                                <span class="code-green">
+                                    "en"
+                                </span>
+
+                                <span class="code-purple">
+                                    &gt;
+                                </span>
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;head&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;title&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    My Website
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/title&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;/head&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;body&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;h1&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    Hello World
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/h1&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;/body&gt;
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;/html&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature-grid">
+
+
+                        <article class="feature-item">
+
+                            <span class="feature-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    DOCTYPE
+                                </h3>
+
+                                <p>
+                                    Tells the browser that the
+                                    document uses modern HTML.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="feature-item">
+
+                            <span class="feature-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    HTML
+                                </h3>
+
+                                <p>
+                                    The root element that contains
+                                    the complete HTML document.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="feature-item">
+
+                            <span class="feature-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    HEAD
+                                </h3>
+
+                                <p>
+                                    Contains information about the
+                                    page such as its title and metadata.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="feature-item">
+
+                            <span class="feature-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    BODY
+                                </h3>
+
+                                <p>
+                                    Contains the visible content
+                                    displayed on the web page.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 03 — HEADINGS
+        ==================================================
+        -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        03 / TEXT
+                    </span>
+
+                    <h2>
+                        Headings &amp; Paragraphs
+                    </h2>
+
+                    <p>
+                        Use headings to organize your content
+                        and paragraphs for normal text.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                headings.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;h1&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    Main Heading
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/h1&gt;
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;h2&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    Section Heading
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/h2&gt;
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;h3&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    Smaller Heading
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/h3&gt;
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;p&gt;
+                                </span>
+
+                                <span class="code-green">
+                                    This is a paragraph.
+                                </span>
+
+                                <span class="code-purple">
+                                    &lt;/p&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        HTML provides headings from
+                        <strong>
+                            h1
+                        </strong>
+                        to
+                        <strong>
+                            h6
+                        </strong>.
+                        Use them in a logical hierarchy.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 04 — LINKS
+        ==================================================
+        -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        04 / LINKS
+                    </span>
+
+                    <h2>
+                        HTML Links
+                    </h2>
+
+                    <p>
+                        Links allow users to move from one page
+                        or website to another.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                links.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;a
+                                </span>
+
+                                <span class="code-yellow">
+                                    href
+                                </span>
+
+                                =
+
+                                <span class="code-green">
+                                    "https://example.com"
+                                </span>
+
+                                <span class="code-purple">
+                                    &gt;
+                                </span>
+
+                                Visit Website
+
+                                <span class="code-purple">
+                                    &lt;/a&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        The
+                        <strong>
+                            href
+                        </strong>
+                        attribute tells the browser where
+                        the link should go.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 05 — IMAGES
+        ==================================================
+        -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        05 / IMAGES
+                    </span>
+
+                    <h2>
+                        HTML Images
+                    </h2>
+
+                    <p>
+                        Images help communicate information and
+                        make websites more visual.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                image.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;img
+                                </span>
+
+                                <span class="code-yellow">
+                                    src
+                                </span>
+
+                                =
+
+                                <span class="code-green">
+                                    "profile.jpg"
+                                </span>
+
+                                <span class="code-yellow">
+                                    alt
+                                </span>
+
+                                =
+
+                                <span class="code-green">
+                                    "My profile photo"
+                                </span>
+
+                                <span class="code-purple">
+                                    &gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        The
+                        <strong>
+                            src
+                        </strong>
+                        attribute specifies the image location.
+                        The
+                        <strong>
+                            alt
+                        </strong>
+                        attribute describes the image.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 06 — LISTS
+        ==================================================
+        -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        06 / LISTS
+                    </span>
+
+                    <h2>
+                        HTML Lists
+                    </h2>
+
+                    <p>
+                        Lists are useful when displaying multiple
+                        related items.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                lists.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;ul&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;li&gt;
+                                </span>
+
+                                HTML
+
+                                <span class="code-purple">
+                                    &lt;/li&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;li&gt;
+                                </span>
+
+                                CSS
+
+                                <span class="code-purple">
+                                    &lt;/li&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;li&gt;
+                                </span>
+
+                                JavaScript
+
+                                <span class="code-purple">
+                                    &lt;/li&gt;
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;/ul&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Use
+                        <strong>
+                            ul
+                        </strong>
+                        for an unordered list and
+                        <strong>
+                            ol
+                        </strong>
+                        for an ordered list.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 07 — BUTTONS
+        ==================================================
+        -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        07 / BUTTONS
+                    </span>
+
+                    <h2>
+                        HTML Buttons
+                    </h2>
+
+                    <p>
+                        Buttons are commonly used for actions
+                        and interactions.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                button.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;button&gt;
+                                </span>
+
+                                Click Me
+
+                                <span class="code-purple">
+                                    &lt;/button&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        A button can later be connected to
+                        JavaScript to perform actions when
+                        the user clicks it.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 08 — FORMS
+        ==================================================
+        -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        08 / FORMS
+                    </span>
+
+                    <h2>
+                        HTML Forms
+                    </h2>
+
+                    <p>
+                        Forms allow users to enter information
+                        such as names, email addresses and messages.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                form.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;form&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;label&gt;
+                                </span>
+
+                                Name
+
+                                <span class="code-purple">
+                                    &lt;/label&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;input
+                                </span>
+
+                                <span class="code-yellow">
+                                    type
+                                </span>
+
+                                =
+
+                                <span class="code-green">
+                                    "text"
+                                </span>
+
+                                <span class="code-purple">
+                                    &gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;button
+                                </span>
+
+                                <span class="code-yellow">
+                                    type
+                                </span>
+
+                                =
+
+                                <span class="code-green">
+                                    "submit"
+                                </span>
+
+                                <span class="code-purple">
+                                    &gt;
+                                </span>
+
+                                Send
+
+                                <span class="code-purple">
+                                    &lt;/button&gt;
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;/form&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p>
+                        Forms become much more powerful when
+                        combined with CSS, JavaScript and backend
+                        development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 09 — SEMANTIC HTML
+        ==================================================
+        -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        09 / STRUCTURE
+                    </span>
+
+                    <h2>
+                        Semantic HTML
+                    </h2>
+
+                    <p>
+                        Semantic elements describe the meaning
+                        and purpose of different parts of a page.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                semantic.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;header&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                Website Header
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;/header&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;main&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                Main Content
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;/main&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;footer&gt;
+                                </span>
+
+                            </div>
+
+                            <div class="code-indent">
+
+                                Website Footer
+
+                            </div>
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;/footer&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="path-tags">
+
+                        <span>
+                            header
+                        </span>
+
+                        <span>
+                            nav
+                        </span>
+
+                        <span>
+                            main
+                        </span>
+
+                        <span>
+                            section
+                        </span>
+
+                        <span>
+                            article
+                        </span>
+
+                        <span>
+                            aside
+                        </span>
+
+                        <span>
+                            footer
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 10 — PRACTICE CHALLENGE
+        ==================================================
+        -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        10 / PRACTICE
+                    </span>
+
+                    <h2>
+                        Your Practice Challenge
+                    </h2>
+
+                    <p>
+                        Before moving to the mini project,
+                        try creating this page yourself.
+                    </p>
+
+                </div>
+
+
+                <div class="cta-box">
+
+                    <div class="cta-content">
+
+                        <span class="project-type">
+                            CHALLENGE
+                        </span>
+
+                        <h2>
+                            Create a Simple Profile Page
+                        </h2>
+
+                        <p>
+                            Create an HTML page containing your
+                            name, a short introduction, a list
+                            of your skills, one image, one link
+                            and one button.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Add Your Name
+                            </h3>
+
+                            <p>
+                                Use an h1 element for your main heading.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Add Introduction
+                            </h3>
+
+                            <p>
+                                Use a paragraph to introduce yourself.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Add Skills
+                            </h3>
+
+                            <p>
+                                Create a list containing at least
+                                three skills.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Add a Link
+                            </h3>
+
+                            <p>
+                                Add a link to a website or social
+                                profile you want to share.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        SECTION 11 — MINI PROJECT
+        ==================================================
+        -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        11 / MINI PROJECT
+                    </span>
+
+                    <h2>
+                        Build a Mini Portfolio
+                    </h2>
+
+                    <p>
+                        Now combine the HTML elements from this
+                        lesson into one simple portfolio page.
+                    </p>
+
+                </div>
+
+
+                <div class="lesson-section">
+
+
+                    <div class="code-window">
+
+                        <div class="code-window-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="window-name">
+                                portfolio.html
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;!DOCTYPE html&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;html&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;head&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;title&gt;
+                                </span>
+
+                                My Portfolio
+
+                                <span class="code-purple">
+                                    &lt;/title&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;/head&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;body&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;header&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;h1&gt;
+                                </span>
+
+                                My Portfolio
+
+                                <span class="code-purple">
+                                    &lt;/h1&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;/header&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;main&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;section&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;h2&gt;
+                                </span>
+
+                                About Me
+
+                                <span class="code-purple">
+                                    &lt;/h2&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;p&gt;
+                                </span>
+
+                                I am learning web development.
+
+                                <span class="code-purple">
+                                    &lt;/p&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;/section&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;section&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;h2&gt;
+                                </span>
+
+                                My Skills
+
+                                <span class="code-purple">
+                                    &lt;/h2&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;ul&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;li&gt;
+                                </span>
+
+                                HTML
+
+                                <span class="code-purple">
+                                    &lt;/li&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;li&gt;
+                                </span>
+
+                                CSS
+
+                                <span class="code-purple">
+                                    &lt;/li&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;li&gt;
+                                </span>
+
+                                JavaScript
+
+                                <span class="code-purple">
+                                    &lt;/li&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;/ul&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;/section&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-3">
+
+                                <span class="code-purple">
+                                    &lt;button&gt;
+                                </span>
+
+                                Contact Me
+
+                                <span class="code-purple">
+                                    &lt;/button&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;/main&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent-2">
+
+                                <span class="code-purple">
+                                    &lt;footer&gt;
+                                </span>
+
+                                My Portfolio
+
+                                <span class="code-purple">
+                                    &lt;/footer&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div class="code-indent">
+
+                                <span class="code-purple">
+                                    &lt;/body&gt;
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <span class="code-purple">
+                                    &lt;/html&gt;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        LESSON CHECKLIST
+        ==================================================
+        -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        LESSON CHECK
+                    </span>
+
+                    <h2>
+                        Can You Do These?
+                    </h2>
+
+                    <p>
+                        Before moving to the next HTML lesson,
+                        make sure you can complete these tasks.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Create an HTML File
+                            </h3>
+
+                            <p>
+                                You can create and open an
+                                HTML document in a browser.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Create Page Content
+                            </h3>
+
+                            <p>
+                                You can create headings,
+                                paragraphs and lists.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Add Elements
+                            </h3>
+
+                            <p>
+                                You can add links, images,
+                                buttons and forms.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-item">
+
+                        <span class="feature-number">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Structure a Page
+                            </h3>
+
+                            <p>
+                                You understand the purpose of
+                                semantic HTML elements.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--
+        ==================================================
+        LESSON COMPLETE
+        ==================================================
+        -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div class="cta-content">
+
+                        <span class="project-type">
+                            LESSON 01 COMPLETE
+                        </span>
+
+                        <h2>
+                            Keep Building.
+                        </h2>
+
+                        <p>
+                            You now have the foundation needed
+                            to start creating structured web pages.
+                            Continue practicing before moving
+                            to the next lesson.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="html-lessons.html"
+                        class="btn btn-primary"
+                    >
+                        Back to HTML Lessons
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!--
+    ==================================================
+    FOOTER
+    ==================================================
+    -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-main">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="logo"
+                    >
+                        &lt;TCA/&gt;
+                    </a>
+
+                    <p>
+                        Learn. Practice. Build.
+                    </p>
+
+                </div>
+
+
+                <!-- ACADEMY LINKS -->
+
+                <div class="footer-links">
+
+                    <h3>
+                        Academy
+                    </h3>
+
+                    <a href="learning.html">
+                        Learning
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                </div>
+
+
+                <!-- LEARNING PATHS -->
+
+                <div class="footer-links">
+
+                    <h3>
+                        Learning Paths
+                    </h3>
+
+                    <a href="web-development.html">
+                        Web Development
+                    </a>
+
+                    <a href="programming.html">
+                        Programming
+                    </a>
+
+                    <a href="app-development.html">
+                        App Development
+                    </a>
+
+                </div>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="footer-social">
+
+                    <h3>
+                        Follow Us
+                    </h3>
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://www.facebook.com/tharushwebdesign"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Facebook
+                        </a>
+
+                        <a
+                            href="https://www.tiktok.com/@tharusha.webdeve"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            TikTok
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    Tharusha Code Academy © 2026
+                </p>
+
+                <p>
+                    Built for learners.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+    <!--
+    ==================================================
+    JAVASCRIPT
+    ==================================================
+    -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
